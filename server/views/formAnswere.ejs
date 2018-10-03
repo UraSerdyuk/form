@@ -13,13 +13,9 @@
     <div class="conteiner">
         <div class="root"></div>
 
-        <form action="/form" method="post">
-                <p>Enter an email address:</p>
-                <input type="email" id='email' name="email" placeholder="email">
-                <p>Enter password:</p>
-                <input type="password" name="password" placeholder="password" />
-                <input type="submit" value="Submit" id='validate'/>
-        </form>
+        <h1>You was send</h1>
+        <h3>Email : <%= obj.email %></h3> 
+        <h3>Password : <%= obj.password %></h3> 
 
     </div>
 <script src="js/index.js"></script>
