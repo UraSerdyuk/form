@@ -13,12 +13,16 @@
     <div class="conteiner">
         <div class="root"></div>
 
-        <form action="/form" method="post">
+        <form action="/form" method="post" id="form">
                 <p>Enter an email address:</p>
-                <input type="email" id='email' name="email" placeholder="email">
-                <p>Enter password:</p>
-                <input type="password" name="password" placeholder="password" />
-                <input type="submit" value="Submit" id='validate'/>
+                <input type="email" class="input" name="email" placeholder="email">
+                <p>Enter your name:</p>
+                <input type="text" class="input" name="text" placeholder="name">
+
+                <p class="text-password">Enter password:</p>
+                <input type="password" class="input" name="password" placeholder="password"  />
+            <br>
+                <input type="submit" value="Send Form" id='validate'/>
         </form>
 
     </div>

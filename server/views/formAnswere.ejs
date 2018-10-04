@@ -12,11 +12,13 @@
 <body>
     <div class="conteiner">
         <div class="root"></div>
-
-        <h1>You was send</h1>
-        <h3>Email : <%= obj.email %></h3> 
-        <h3>Password : <%= obj.password %></h3> 
-
+<div class="res_form">
+        <h1 class="title">Data was send from form</h1>
+        <h3 class="value">Email : <span><%= obj.email %></span></h3> 
+        <h3 class="value">Email : <span><%= obj.name %></span></h3> 
+        <h3 class="value">Password : <span><%= obj.password %></span></h3> 
+</div>
+    
     </div>
 <script src="js/index.js"></script>
 </body>
