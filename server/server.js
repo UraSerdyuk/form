@@ -3,13 +3,14 @@ var bodyParser = require('body-parser');
 var app = express();
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
-app.use(express.static('test'));
+
 app.set('view engine','ejs');
 
 app.listen(3000,listening);
 function listening () {
     console.log('server listening ...');
 }
+app.use(express.static('test'));
 
 app.post('/form',urlencodedParser,function(req,res){
   if (!req.body) {return res.sendStatus(400)}
