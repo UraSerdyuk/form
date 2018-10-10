@@ -3,13 +3,15 @@ var bodyParser = require('body-parser');
 var app = express();
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
-
 app.set('view engine','ejs');
 
-app.listen(3000,listening);
-function listening () {
-    console.log('server listening ...');
-}
+const PORT = process.env.PORT || 3000;
+app.listen(PORT);
+
+// app.listen(3000,listening);
+// function listening () {
+//     console.log('server listening ...');
+// }
 app.use(express.static('test'));
 
 app.post('/form',urlencodedParser,function(req,res){
