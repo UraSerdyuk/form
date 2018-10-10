@@ -12,7 +12,7 @@ app.listen(PORT);
 // function listening () {
 //     console.log('server listening ...');
 // }
-app.use(express.static('test'));
+app.use(express.static('server/test'));
 
 app.post('/form',urlencodedParser,function(req,res){
   if (!req.body) {return res.sendStatus(400)}
